@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primaryTextColor: #232e35; /* untuk titile atau judul */
+    --secondaryTextXolor: #656d72; /* untuk teks biasa seperti paragraph */
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9; /* untuk line di pre-title*/
+
+
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #4d9168;
+    --primaryIconColorHover: #66c44b;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius: 0.7rem;
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family : "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem;/*1 rem 15 pikse;*/
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200 px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}

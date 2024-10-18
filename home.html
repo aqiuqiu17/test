@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/EAST LOGO.png" alt="Logo"> <!-- Ganti dengan path ke logo -->
+        </div>
+        <h1>EAST PROJECT</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/home.html#" id="home" onclick="showSection('home')">Home</a></li>
+                <li><a href="qgis2web_2024_10_17-01_53_29_244497/index.html" id="mapLink" onclick="showSection('Map')">Map</a></li>
+                <li><a href="http://127.0.0.1:5501/insight.html#" id="insightLink" onclick="showSection('Insight')">Insight</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h3>Analysis of the Impact of Unemployment Rates on the Socio-Cultural and Economic Aspects of Indonesia Through the Development of a WebGIS-Based Relative Spatial Unemployment Index</h3>
+            <p>Members:</p>
+            <p class="members">
+                Mentari Khersoniana Azahra, Aldi Firdausiyah, Padilla Air-syifa Ferbianto, Aqsar Dimara Sakti<br>
+                Bandung Institute of Technology | Geodesy and Geomatics Engineering
+            </p>
+            <!-- Tombol View Map -->
+            <a href="qgis2web_2024_10_17-01_53_29_244497/index.html">
+                <button class="view-map">View Map</button>
+            </a>            
+
+            <!-- Galeri gambar -->
+            <div class="image-gallery">
+                <img src="images/DATA-CERAI.png" alt="Image 1">
+                <img src="images/DATA-IL.png" alt="Image 2">
+                <img src="images/DATA-Kriminalitas.png" alt="Image 3">
+                <img src="images/DATA-PENGANGGURAN.png" alt="Image 4">
+                <img src="images/DATA-NTL.png" alt="Image 5">
+                <img src="images/DATA-Pinjol.png" alt="Image 6">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

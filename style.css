@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Mengubah menjadi kolom untuk logo dan judul */
+    align-items: center; /* Mengatur agar semua elemen berada di tengah */
+    background-color: #d2d2af;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 90px; /* Sesuaikan ukuran logo */
+    max-height: 80px; /* Menjaga proporsi logo */
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main h3 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.members {
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    margin: 10px 0; /* Menambahkan margin atas dan bawah untuk jarak */
+}
+
+.view-map {
+    display: inline-block; /* Buat tombol dalam bentuk inline-block */
+    padding: 10px 20px; /* Ukuran padding tombol */
+    font-size: 16px; /* Ukuran font */
+    color: white; /* Warna teks */
+    background-color: #4CAF50; /* Warna latar belakang */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+    transition: background-color 0.3s; /* Efek hover */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks */
+    text-align: center; /* Agar teks di tengah */
+    margin: 20px auto; /* Ini yang membuat tombol berada di tengah */
+    display: block; /* Membuat elemen a/block agar margin auto bisa berfungsi */
+}
+
+.view-map:hover {
+    background-color: #45a049; /* Warna saat dihover */
+}
+
+a {
+    display: block;
+    text-align: center; /* Agar elemen <a> di tengah */
+    text-decoration: none; /* Menghilangkan garis bawah pada teks link */
+}
+
+
+.image-gallery {
+    display: flex; /* Menggunakan flexbox untuk mengatur gambar dalam barisan */
+    justify-content: center; /* Mengatur agar gambar berada di tengah */
+    flex-wrap: wrap; /* Mengizinkan gambar untuk membungkus ke baris berikutnya jika diperlukan */
+    gap: 15px; /* Jarak antar gambar */
+    margin-top: 20px; /* Jarak antara tombol dan gallery gambar */
+}
+
+.image-gallery img {
+    width: 400px; /* Atur lebar gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 5px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan pada gambar */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
